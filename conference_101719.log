@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  9 JUL 2024 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  9 JUL 2024 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -271,76 +271,76 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 43.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 this pa-per delves into the uti-liza-tion of Vana-dium
  []
 
 
-Underfull \hbox (badness 4120) in paragraph at lines 54--57
+Underfull \hbox (badness 4120) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 (IMT) prop-er-ties, emerges as a prospec-tive can-di-date.
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 54--57
+Underfull \hbox (badness 1783) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 data stor-age ca-pac-i-ties, re-duce power con-sump-tion, and
  []
 
 
-Underfull \hbox (badness 2990) in paragraph at lines 54--57
+Underfull \hbox (badness 2990) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 elec-tri-cal ma-nip-u-la-tion of an ac-tive ma-te-rial's re-sis-tive
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 54--57
+Underfull \hbox (badness 1688) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 dom-i-nates the non-volatile mem-ory mar-ket, down-scal-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 lim-i-ta-tions pose chal-lenges. Al-ter-na-tive random-access
  []
 
 
-Underfull \hbox (badness 5274) in paragraph at lines 54--57
+Underfull \hbox (badness 5274) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 mem-o-ries, such as Mag-netic Random-Access Mem-ory
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 54--57
+Underfull \hbox (badness 2635) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 (MRAM), Re-sis-tive Random-Access Mem-ory (ReRAM),
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 54--57
+Underfull \hbox (badness 2020) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 stand out with their sim-ple ar-chi-tec-ture and promis-ing
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 54--57
+Underfull \hbox (badness 1715) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 and sen-si-tiv-ity to ex-ter-nal stim-uli. Elec-tri-cal cur-rent or
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 54--57
+Underfull \hbox (badness 2302) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 With an insulator-to-metal tran-si-tion fa-cil-i-tat-ing re-duced
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
 \OT1/ptm/m/n/10 re-sponse times and com-pat-i-bil-ity with current-driven
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
 
  []
 
@@ -368,13 +368,13 @@ L3 programming layer <2024-01-22>
 Here is how much of TeX's memory you used:
  4212 strings out of 474222
  65147 string characters out of 5750210
- 1942978 words of memory out of 5000000
+ 1943978 words of memory out of 5000000
  26426 multiletter control sequences out of 15000+600000
  602011 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,10n,65p,2828b,334s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (3 pages, 80400 bytes).
+Output written on conference_101719.pdf (3 pages, 80733 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream

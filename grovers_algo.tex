@@ -109,89 +109,75 @@ probability of $ 1/N $ for discovery. Consequently, the amplitude
 of each state is $ 1/\sqrt{N} $
 . Conversely, classical systems tackling the
 same problem necessitate a maximum of O(N) trials.
-\section{Results and Discussions}
-\subsection{ Models Used}\label{AA}
+\section{Background and Methodology}
 
-To precisely replicate the switching behavior of the Mott material (V\textsubscript{2}O\textsubscript{3}), an extensive model has been developed using established literature [15-18]. Three distinct models were devised, featuring various electrode shapes, with V\textsubscript{2}O\textsubscript{3} as the switching material and an Al\textsubscript{2}O\textsubscript{3} substrate with Ti electrodes in each model. A controlled current is applied to one electrode, generating heat within the device and triggering the Insulator-to-Metal transition. The dimensions of all models are on a micrometer scale. To scrutinize the transition dynamics of V\textsubscript{2}O\textsubscript{3} in each model, temperature and electric potential profiles were meticulously recorded.We believe that the RS properties and the electric field distribution may be affected in some way by the geometry of the electrode, similar to the form of the corners in the lateral devices. We produced three distinct electrode forms in order to investigate the impact of electrode shape that are
-: rectangle, cylindrical, and triangle electrode . The models utilized is depicted in \textbf{Fig. 1, 3, 5}
-% \begin{figure}[htbp]
-% 	\centerline{\includegraphics[width=9cm,height=9cm,keepaspectratio]{fig1.jpg}}
-% 	\caption{Rectangular electrodes model.}
-% 	\label{fig}
-% \end{figure}
+The Grover search algorithm, conceived by Lov Grover
+in 1996, stands as a quantum computing method offering
+a quadratic acceleration compared to classical counterparts,
+particularly for solving unstructured search problems [8]. It
+has gained renown for its proficiency in searching through
+unsorted databases, but its utility extends to a spectrum
+of tasks, encompassing cryptographic problem-solving and
+quantum system simulation. This can speed up a search
+problem quadratically. For N number of unsorted data classical
+computer require O (N) operations Whereas Grover is optimal
+and can do this in O($ \sqrt{N} $) operation. The following provides
+a synopsis of the workings of the Grover search algorithm [9]:
+\subsection{Initialisation}
+Commencing the process involves establishing a superposition of all conceivable states. For instance, when seeking an
+item in a database housing N item, quantum parallelism is
+harnessed to generate a superposition of all N states as shown
+in Fig.1. Achieving this involves a sequence of quantum gate
+operations.
 
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig1.png}}
+	\caption{Superposition of 2 qubits}
+	\label{fig}
+\end{figure}
 
+\subsection{Oracle Function}
+Grover’s algorithm hinges on the application of an oracle
+function, often denoted as \textbf{"$ U_f $"}. This oracle acts to mark
+the target state(s) by inverting their sign. For instance, if the
+objective is to locate a specific item in a database, the oracle
+would negate the amplitude corresponding to the target item.
+In Fig. 2, it is graphically shown the oracle function flipping
+the correct target.
 
-\subsection{Setup using Rectangular Electrodes}
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig2.png}}
+	\caption{Altering the sign of solution state(10)}
+	\label{fig}
+\end{figure}
 
-The observation of potential and temperature changes in material for rectangular electrodes is depicted in \textbf{Figs. 2(a-d)}. The electrode gaps utilized in the setup depicted in Fig. 2 measure 100 nm. Figs.  \textbf{2(a, c)} depicts the precise state of the model at the moment of IMT occurrence, while \textbf{Figs. 2(b, d)} showcases the subsequent state following IMT and its attainment of equilibrium. Upon careful observation, it becomes evident that the material changes into a conductive state which can be observed from the changes in electric potential and temperature across the device. These results are more pronounced due to wider electrodes and more area allowing better heat transfer to substrate.Based on the provided diagram, it is evident that the IMT transition takes place precisely at a temperature of 150 K validating existing literature.
+\subsection{Amplitude Amplification}
+The core of the Grover algorithm is the process of amplitude
+amplification, which entails two central maneuvers:
+\begin{itemize}
+	\item \textbf{Inversion around the Mean}: During this stage, the amplitudes are mirrored around their average value, thus  boosting the amplitude of the desired state(s) while reducing the amplitudes of the non-desired states.
+	\item \textbf{Grover diffusion operator}: In this step, the amplitudes
+	      of the target state(s) are further augmented through the
+	      application of a suite of quantum gates [10].
 
-% \begin{figure}[htbp]
-% 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig2.jpg}}
-% 	\caption{Temperature and potential  of the 100 nm gap setup taken at different intervals for rectangular electrodes.}
-% 	\label{fig}
-% \end{figure}
+\end{itemize}
+After acting of Grover diffusion operator, the final output will
+have amplified magnitude as shown in Fig. 3.
+\subsection{Reiteration}
+Step. 2 and step. 3 are iterated approximately $ \sqrt{N} $ times
+to maximize the likelihood of detecting the correct state. This
+number of iterations ensures that the probability of identifying
+the correct state approaches near certainty.
 
-\subsection{Setup using Triangular Electrodes}
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig3.png}}
+	\caption{Inversion about the mean with amplification.}
+	\label{fig}
+\end{figure}
 
-% \begin{figure}[htbp]	\centerline{\includegraphics[width=8cm,height=8cm,keepaspectratio]{fig3.jpg}}
-% 	\caption{Triangular electrodes model}
-% 	\label{fig}
-% \end{figure}
-The potential and temperature changes in material for triangular electrodes is observed here. The geometric sharp corners of the electrodes provide the strongest electric field, as seen in \textbf{ Fig. 4}. The material's ability to resist switching is aided by the triangle electrode's ability to create strong electric fields close to the metal/oxide contact.
-This characteristic enhances the material's capacity for Resistive Switching, contributing to its overall effectiveness in the process.
-
-% \begin{figure}[htbp]
-% 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig4.jpg}}
-% 	\caption{Temperature and potential profile  of the 100 nm gap setup taken at  different intervals for triangular electrodes.}
-% 	\label{fig}
-% \end{figure}
-
-
-
-\subsection{Setup using Cylindrical Electrodes}
-
-
-% \begin{figure}[htbp]
-% 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig5.jpg}}
-% 	\caption{ Cylindrical electrodes model.}
-% 	\label{fig}
-% \end{figure}
-The cylindrical electrode model differs from the previous two models in its construction. It follows a sandwiched configuration where V\textsubscript{2}O\textsubscript{3} is positioned between two electrodes, with the substrate covering the entire device.The behaviour of the setup has been depicted in \textbf{Fig 6} in which we can we clearly see the formation of conducting filament in the material V\textsubscript{2}O\textsubscript{3}. Building this setup is more expensive compared to the previous ones because those setups can take advantage of existing silicon-based fabrication methods. This particular configuration is designed primarily for academic research, as it provides complete isolation of the device through the substrate. The study focuses on observing potential and temperature changes within the material using cylindrical electrodes. In this setup, the electrode gaps are set at 100 nm, and the comparison is carried out at various intervals.These results are similar to what we observed in previous electrodes but the conducting filament is clearly observed due to the sandwiched setup.
-
-% \begin{figure}[htbp]
-% 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig6.jpg}}
-% 	\caption{   Temperature and potential profile  of the 100 nm gap setup taken at  different intervals for Cylindrical electrodes.}
-% 	\label{fig}
-% \end{figure}
-
-
-
-\subsection{Comparison of three models}
-
-The comparison of results from all three models with a 100 nm gap aims to determine the most efficient electrode shape. Upon comparing the voltage-current (V-I) characteristics and voltage-versus-time profiles of all three models, notable insights emerge. The switching point voltage, observed at the peaks of each curve, varies among the setups. Specifically, the triangular electrode configuration exhibits the highest switching point voltage, while the rectangular setup shows the lowest. This implies that the rectangular setup boasts superior switching capabilities at lower voltages, contributing to reduced power consumption. Analyzing the resistance-versus-time curve, the triangular setup displays a significantly steeper curve, indicating faster resistance switching compared to the other models. This accelerated switching is attributed to the focusing effect inherent in the triangular configuration.
-
-
-
-% \begin{figure}[htbp]
-% 	\centerline{\includegraphics[width=8cm,height=8cm,keepaspectratio]{fig7.jpg}}
-% 	\caption{Comparison of  V-I characteristics of  Rectangular, Triangular and Cylindrical electrode setups of 100 nm gap. }
-% 	\label{fig}
-% \end{figure}
-
-Remarkably, the resistance switching in the rectangular electrode setup closely mirrors that of the triangular configuration. In contrast, the cylindrical setup exhibits a comparatively slower switching behavior.We evaluate resistances, V-I characteristics, and potential differences. Interestingly, the rectangular electrode outperforms the others, with lower resistance and a lower activation voltage. This superiority can be attributed to the rectangular electrode’s capacity to efficiently transfer heat to the material, thanks to its larger surface area. This outcome might appear counterintuitive, as one might expect the triangular electrode to perform better due to its focusing effect. However, the smaller contact area of the triangular electrode limits the heat transfer compared to the rectangular electrode.
-% \begin{figure}[htbp]
-% 	\centerline{\includegraphics[width=8cm,height=8cm,keepaspectratio]{fig8.jpg}}
-% 	\caption{Comparison of resistances of  Rectangular, Triangular and Cylindrical electrode setups of 100 nm gap. }
-% 	\label{fig}
-% \end{figure}
-% \begin{figure}[htbp]
-% 	\centerline{\includegraphics[width=8cm,height=8cm,keepaspectratio]{fig9.jpg}}
-% 	\caption{Comparison of Potential differences of  Rectangular, Triangular and Cylindrical electrode setups of 100 nm gap.
-% 	 }
-% 	\label{fig}
-% \end{figure}
-The cylindrical electrode exhibits the least favorable performance, primarily due to the difficulty in achieving higher temperatures in this configuration, owing to the larger substrate. This underscores the importance of prioritizing heat accumulation when designing these setups. Furthermore, this observation supports the validity of the Joule heating model in understanding the Insulator-to-Metal Transition (IMT) in Mott devices
+\subsection{ Measurement}
+Ultimately, the quantum state is subjected to measurement.
+The target state is discerned with notably higher probability in comparison to the non-target state.
 
 \section{Conclusion}
 This study thoroughly investigated and modeled the Mott insulator V\textsubscript{2}O\textsubscript{3}, exploring its potential for ReRAM technology. The impact of various electrode configurations on device performance was carefully examined, identifying crucial areas for improvement crucial for successful integration. These results are pivotal for advancing the use of Mott materials in emerging memory technologies. The insights gained from this research are particularly valuable for developing a practical, physical model for future applications.

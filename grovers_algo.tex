@@ -52,18 +52,63 @@
 \maketitle
 
 \begin{abstract}
-	Emerging memory technologies are driven by the escalating demand for advanced, high-performance, and energy-efficient memory solutions. Traditional technologies, while effective, face challenges in meeting the demands of modern computing and data storage applications. As the demand for enhanced data retrieval speed, reduced energy consumption, and greater scalability grows, emerging memory technologies like Magnetic Random-Access Memory (MRAM), Resistive Random-Access Memory (ReRAM), and Phase-Change Random Access Memory (PCRAM) are becoming increasingly prominent. ReRAM, distinguished by its unique resistive switching mechanism, facilitates reversible transitions between high and low-resistance states, providing a foundation for efficient data storage. A noteworthy aspect of ReRAM is the utilization of Mott insulators, such as VO\textsubscript{2} and V\textsubscript{2}O\textsubscript{3}, known for their remarkable insulator-to-metal transition (IMT) capabilities. This unique property allows ReRAM to achieve precise and energy-efficient control over resistance states, contributing to its allure as a promising alternative in the ever-evolving landscape of memory technologies.
+	Quantum computing represents the leading edge of
+	computational technology, leveraging the principles of quantum
+	mechanics to execute targeted computations much faster than
+	classical computers. In contrast to classical bits, which are limited
+	to representing either 0 or 1, qubits, or quantum bits, exhibit
+	the extraordinary property of superposition. This distinctive
+	characteristic enables qubits to simultaneously occupy multiple
+	states, empowering quantum computers to explore numerous
+	potential solutions to a problem concurrently. This feature
+	makes quantum computing particularly potent for specific tasks.
+	Recent research endeavors have been sparked by the potential
+	of advanced quantum computing technology, leading to the
+	creation of simulations of quantum computers using classical
+	hardware. Grover’s quantum search algorithm serves as a notable
+	illustration of quantum computing application, enabling quantum
+	computers to conduct a database search within an unsorted array
+	with a quadratic speedup in time efficiency compared to classical
+	computers. This document presents the quantum Grover search
+	algorithm and its application through 5-qubit quantum circuits,
+	as well as a design framework to simplify the creation of an
+	oracle for a greater number of qubits.
 \end{abstract}
 
 \begin{IEEEkeywords}
-	Mott insulator, Resistive switching, Resistive RAM, Memory effect, (IMT) Insulator to metal phase transition.
+	Quantum computation, Qubits, Oracle, Grover’s
+	algorithm, IBM Qiskit.
 \end{IEEEkeywords}
 
 \section{Introduction}
-In the ever-expanding landscape of memory technologies, this paper delves into the utilization of Vanadium sesquioxide (V\textsubscript{2}O\textsubscript{3}), a distinguished Mott insulator, to address contemporary challenges encountered by memory devices [1]. With current memory technologies facing limitations in downscaling, the demand for advanced solutions becomes paramount. V\textsubscript{2}O\textsubscript{3}, with its unique insulator-to-metal transition (IMT) properties, emerges as a prospective candidate. This study explores the integration of V\textsubscript{2}O\textsubscript{3} in Resistive Random-Access Memories (ReRAMs), aiming to enhance data storage capacities, reduce power consumption, and meet the escalating speed requirements crucial for modern technology demands. The investigation into these critical aspects underscores the potential of V\textsubscript{2}O\textsubscript{3} as a key player in the evolution of memory technologies [2-3].Emerging in the memory landscape, resistive random-access memories (ReRAMs) offer non-volatility through precisely controlled electrical manipulation of an active material's resistive switching (RS) behavior. While Flash technology currently dominates the non-volatile memory market, downscaling limitations pose challenges. Alternative random-access memories, such as  Magnetic Random-Access Memory (MRAM), Resistive Random-Access Memory (ReRAM), and Phase-Change Random Access Memory (PCRAM), are considered promising candidates. Among these, ReRAMs stand out with their simple architecture and promising memory performances.In Resistive Random-Access Memory (ReRAM), information persists via the reversible and non-volatile manipulation of an active material's two distinct resistance states. Applying controlled electrical pulses induces this dynamic switching phenomenon. This work focuses on a specific type of ReRAM where the active material exhibits Mott insulator behavior. Mott insulator materials such as VO\textsubscript{2} (T \textsubscript{IMT} = 330 K), NbO\textsubscript{2} (T\textsubscript{IMT} = 1070 K), Ca\textsubscript{2} RuO\textsubscript{4} (T\textsubscript{IMT} = 357 K), and V\textsubscript{2}O\textsubscript{3} (T\textsubscript{IMT}= 150 K) are widely utilized because of the observance of IMT effect. These materials undergo a rapid insulator-to-metal transition (IMT), which is a remarkable and interesting phenomenon.Vanadium dioxide (VO\textsubscript{2}) and vanadium sesquioxide (V\textsubscript{2}O\textsubscript{3}) are strongly electron correlated materials that exhibit IMTs under equilibrium or nonequilibrium conditions[4-5].
+The exploration of quantum computing [1][2] falls within
+the realm of quantum information science, which revolves
+around the fundamental principles of storing and manipulating
+information. In this work, we delved into quantum computing,
+acquiring a comprehensive understanding of quantum bits
+and their properties, as well as leveraging these properties
+to tackle problems. We familiarized ourselves with quantum
+gates and their operations on qubits, simulating all the funda
+mental quantum gates [3][4]. Additionally, we delved into the
+Grover search algorithm and implemented quantum gates for
+Grover operations. Quantum computers exhibit significantly
+faster speeds compared to classical computers [5][6]. In the
+case of an unsorted dataset with size N, classical computers
+usually demand O(N) operations, whereas Grover’s algorithm
+accomplishes this task optimally in O($\sqrt{N}$) operations.
 \\
-Vanadium sesquioxide (V\textsubscript{2}O\textsubscript{3}) is a classic Mott insulator. It’s interesting because it can change from being a metal to an insulator from 150K to 160K range of temperature depending on factors like temperature, doping, and pressure. When V\textsubscript{2}O\textsubscript{3} is cooled down from a state where it acts like a magnetic metal (PM phase) to a state where it behaves like an insulator (AFI phase) at 160 K, [6] it goes through a significant change in its  electrical conductivity.V\textsubscript{2}O\textsubscript{3} shows sharp change in its electrical characteristics [7]. This change is quite impressive, with its resistivity shifting by a factor of five to seven orders of magnitude [8-10].Currently, in this work V\textsubscript{2}O\textsubscript{3} has been investigated for Device configuration.[11,12] where the flow of current induces a structural transition as a consequence of Joule heating.[13,14]. The electrically induced Insulator-to-Metal Transition (IMT) mechanism is a topic of ongoing discussion within the scientific community. For materials that display IMT as a function of temperature, such as VO\textsubscript{2} and V\textsubscript{2}O\textsubscript{3}, One potential explanation for the transition's onset is Joule heating driven by the current flow. IMT materials are attractive candidates for a variety of applications, including memory components and selectors for Resistive Random-Access Memory (ReRAM), because to their special qualities and sensitivity to external stimuli. Electrical current or voltage is used in electronic devices to facilitate the actual implementation of IMT, which makes it possible to create devices that are fast and highly scalable. We explore the promising performance advantages of Mott Insulator-based Memory Technologies. The material inherently possesses an impressive memory effect, characterized by distinctive ON-OFF transitions occurring at remarkably low voltages. With an insulator-to-metal transition facilitating reduced energy consumption and vital precise switching capabilities for memory applications, these technologies ensure swift response times and compatibility with current-driven transitions. However, practical and scalable applications face challenges, including the complexity of material synthesis, scalability issues, and integration with existing technologies. Addressing these challenges is imperative, underscoring the significance of ongoing research and collaborative efforts to fully unlock the potential. The demonstrated Memory effect in Vanadium sesquioxide (V\textsubscript{2}O\textsubscript{3}) holds considerable promise in the domains of neuromorphic computing and related fields.\\
+We
+executed the algorithm using Qiskit, an IBM tool for com
+puting quantum circuits, and conducted simulations for the
+Grover algorithm [7], presenting the results graphically with
+the probability of obtaining the correct output.
 
+Within Grover’s quantum search algorithm, a network with
+n qubits harbors $ 2^{n} $ = N states, with each state bearing a
+probability of $ 1/N $ for discovery. Consequently, the amplitude
+of each state is $ 1/\sqrt{N} $
+. Conversely, classical systems tackling the
+same problem necessitate a maximum of O(N) trials.
 \section{Results and Discussions}
 \subsection{ Models Used}\label{AA}
 

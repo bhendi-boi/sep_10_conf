@@ -179,49 +179,142 @@ the correct state approaches near certainty.
 Ultimately, the quantum state is subjected to measurement.
 The target state is discerned with notably higher probability in comparison to the non-target state.
 
-\section{Conclusion}
-This study thoroughly investigated and modeled the Mott insulator V\textsubscript{2}O\textsubscript{3}, exploring its potential for ReRAM technology. The impact of various electrode configurations on device performance was carefully examined, identifying crucial areas for improvement crucial for successful integration. These results are pivotal for advancing the use of Mott materials in emerging memory technologies. The insights gained from this research are particularly valuable for developing a practical, physical model for future applications.
+\section{ CONSTRUCTION OF ORACLE AND DIFFUSION
+  OPERATOR}
+The Grover iteration, also known as the Grover operator,
+constitutes a crucial component of the quantum search process.
+It encompasses two distinct phases. At the outset, the oracle
+function modifies the phase of a single amplitude within a
+marked state. Upon completion of this phase, referred to as
+the diffusion layer, the indicated state amplitude is flipped.
+Consequently, while the amplitudes of the other states remain
+unchanged, the target state assumes an inverted state, resulting
+in a notable increase in its amplitude and a slight decrease in
+the amplitudes of the other states. The block diagram of Grover
+iteration circuit is shown below in Fig. 4.
 
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig4.png}}
+	\caption{Grover Iteration circuit}
+	\label{fig}
+\end{figure}
 
+\subsection{ORACLE}
+An oracle, defined as a medium or agency for divine
+revelation, particularly noted in ancient Greece, also refers
+to a person possessing great wisdom or a wise utterance. In
+quantum computing, a quantum oracle [11] is a computational
+component that furnishes data pertinent to the particular prob
+lem or task undergoing processing by the quantum algorithm.
+The quantum oracle performs a bit-flip on the oracle qubit when the input corresponds to a valid solution.The functionality of the oracle operates on principles rather than mystical
+properties.Through the abstraction of the problem using an
+oracle,we can focus on solving the problem without being
+constrained by its specific details.This quantum algorithm is
+crafted to determine the input value x* for a function F(x),
+where F(x*) = 1 and F(x) = 0 for all other values of x.
+
+\subsection{DIFFUSION OPERATOR}
+The diffusion operation can be realized through the sequence:HX+Oracle+XH. In this scenario, H symbolizes
+the Hadamard transform,while X represents the Pauli-X gate.
+This sequence effectively flips the amplitudes around their
+mean value. Simulation of Hadamard gate, Pauli-x gate and
+Zero phase shift gate in Qiskit are shown in Fig.5,Fig.6and
+Fig.7respectively[12].
+
+\section{CIRCUIT IMPLEMENTATION AND RESULTS}
+Grover’s oracle is developed and Grover's algorithm is implemented using Q-simulator from
+Qiskit.
+
+\subsection{Simulation Results}
+Simulation results for 3-qubit, 4-qubit and 5-qubit Grover
+search algorithm are shown in Fig. 11, Fig. 12 and Fig.
+13 respectively. In 1,024 measurements with the ibmqx4,
+the outcome x = (110) was observed 966 times (Fig. 11),
+corresponding to a probability of 94.33 percent. In 1,024
+measurements with the ibmqx4, the outcome x = (1011) was
+observed 987 times (Fig. 12), corresponding to a probability
+of 96.38 percent. In 1,024 measurements with the ibmqx4,
+the outcome x = (11010) was observed 1023 times (Fig. 13),
+corresponding to a probability of 99.90 percent
+
+\section{CONCLUSION}
+In summary, quantum computing presents an intriguing
+pathway for addressing intricate problems that surpass the ca
+pabilities of classical computers. Qiskit’s quantum computing
+platform offers a sturdy framework for creating, simulating,
+and executing quantum algorithms. In contrast to classical
+search algorithms, which require O(N) operations for N
+items, Grover’s algorithm achieves this task in approximately
+O($\sqrt{N} $) operations. Initially, we replicated IBM’s proposed
+Grover search algorithm for 3 qubits. To enhance fidelity, we
+modified the design of the Oracle and Diffusion operators by
+incorporating auxiliary qubits. However, this led to increased
+circuit complexity due to a larger number of gates. The
+experiments were conducted using the IBM Q-simulator. The
+results indicate that the scalable Grover’s search technique
+proposed can potentially be employed in future quantum
+systems for a wide range of large-scale applications. Since
+the diffusion process incorporates the Oracle (HX + Oracle +
+XH), iteratively running the Oracle circuit multiple times complicates the quantum circuit and decreases its effectiveness.
+Nonetheless, by designing the Oracle as a subroutine, we can
+leverage the advantages of reusability. This strategy mitigates
+potential manual mistakes and streamlines the process by
+eliminating the necessity of re-executing all the gates, with
+IBM Q providing assistance for subroutines. Subsequently,
+using this 5-qubit setup as a benchmark, the algorithm will
+be extended to n-qubits.
 
 
 \begin{thebibliography}{00}
 
-	\bibitem{b1} T. N. Theis and P. M. Solomon, "In Quest of the “Next Switch”: Prospects for Greatly Reduced Power Dissipation in a Successor to the Silicon Field-Effect Transistor," in Proceedings of the IEEE, vol. 98, no. 12, pp. 2005-2014, Dec. 2010.
+	\bibitem{b1}  C. P. Williams, “Introduction,” Texts in Computer Science, pp. 3–49,
+	2011.
 
-	\bibitem{b2} Molas, G.; Nowak, E. "Advances in Emerging Memory Technologies: From Data Storage to Artificial Intelligence," Appl. Sci., vol. 11, no. 23, p. 1254, 2021.
+	\bibitem{b2}  T. D. Ladd, F. Jelezko, R. Laflamme, Y. Nakamura, C. Monroe, and
+	J. L. O’Brien, “Quantum computers,” Nature, vol. 464, no. 7285, pp.
+	45–53, Mar. 2010.
 
-	\bibitem{b3} J. H. de Boer, and E. J. W Verwey, "Semi-conductors with partially and with completely filled 3d-lattice bands," Proceedings of the Physical Society, vol. 49 (4S), pp. 4S, Aug.1937.
+	\bibitem{b3} “Quantum Computing: Fundamentals, Implementations and Applica
+	tions” — IEEE Journals Magazine — IEEE Xplore, ieeexplore.ieee.org.
 
-	\bibitem{b4} E. Janod, J. Tranchant, B. Corraze, M. Querré, P. Stoliar, M. Rozenberg, T. Cren et al. "Resistive switching in Mott insulators and correlated systems," Advanced Functional Materials, vol. 25, no. 40, pp. 6287-6305, Oct.2015.
+	\bibitem{b4} D. P. DiVincenzo, “The Physical Implementation of Quantum Compu
+	tation,” Fortschritte der Physik, vol. 48, no. 9–11, pp. 771–783, Sep.
+	2000.
+	\bibitem{b5}  D. Bacon and W. van Dam, “Recent progress in quantum algorithms,”
+	Communications of the ACM, vol. 53, no. 2, pp. 84–93, Feb. 2010.
 
-	\bibitem{b5} J. Hubbard, "Electron correlations in narrow energy bands. II. The degenerate band case." Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences, vol. 277, no. 1369, pp. 237-259, Jan.1964.
+	\bibitem{b6}  N. C¸elik and ¨ O. Bing¨ ol, “Analysis of Grover’s quantum search algorithm
+	on a classical computer: Identifying opportunities for improvement,”
+	Sigma Journal of Engineering and Natural Sciences, vol. 42, no. 6, 2024.
 
-	\bibitem{b6} C. N. Berglund, "Thermal filaments in vanadium dioxide," in IEEE Transactions on Electron Devices, vol. 16, no. 5, pp. 432-437, May 1969.
+	\bibitem{b7} “Learn Quantum Computing with Python and IBM Quantum Experi
+	ence: A hands-on introduction to quantum computing and writing your
+	own quantum programs with Python- Robert Loredo- Libro in lingua
+	inglese- Packt Publishing Limited- — IBS,” www.ibs.it.
 
-	\bibitem{b7} A. Ronchi et al., "Light-Assisted Resistance Collapse in a V\textsubscript{2}O\textsubscript{3}-Based Mott-Insulator Device," Phys. Rev. Appl., vol. 15, no. 4, pp. 044023, Apr. 2021.
+	\bibitem{b8}  L. K. Grover, “A fast quantum mechanical algorithm for database
+	search,” arXiv:quant-ph/9605043, Nov. 1996.
 
-	\bibitem{b8} V. N. Andreev et al., "Thermal conductivity of VO\textsubscript{2}, V3O5, and V\textsubscript{2}O\textsubscript{3}," physica status solidi (a), vol. 48, no. 2, pp. K153-K156, 1978.
+	\bibitem{b9} A. J. et al., “Quantum Algorithm Implementations for Beginners,”
+	arXiv:1804.03719 [quant-ph], Mar. 2020.
 
-	\bibitem{b9} P. Stoliar et al., "Universal electric-field-driven resistive transition in narrow-gap Mott insulators," Adv. Mater., vol. 25, pp. 3222, 2013.
+	\bibitem{b10}  “Quantum Game Simulator, Using the Circuit Model of Quantum —
+	IEEE Conference Publication — IEEE Xplore,” ieeexplore.ieee.org.
 
-	\bibitem{b10} S. Guénon et al., "Electrical breakdown in a V\textsubscript{2}O\textsubscript{3} device at the insulator-to-metal transition," EPL (Europhysics Letters), vol. 101, pp. 57003, 2013.
+	\bibitem{b11}  C. B. Pronin and A. V. Ostroukh, “Developing Mathematical Oracle
+	Functions for Grover Quantum Search Algorithm,” arXiv.org, Sep. 03,
+	2021.
 
-	\bibitem{b11} P. Homm et al., "Collapse of the low temperature insulating state in Cr-doped V\textsubscript{2}O\textsubscript{3} thin films," Appl. Phys. Lett., vol. 107, pp. 111904, 2015.
+	\bibitem{b12} R. L. Singleton Jr, M. L. Rogers, and D. L. Ostby, “Grover’s Algorithm
+	with Diffusion and Amplitude Steering,” arXiv.org, Oct. 21, 2021.
 
-	\bibitem{b12} Y. Kalcheim et al., "Non-thermal resistive switching in Mott insulator nanowires," Nat. Commun., vol. 11, pp. 2985, 2020.
+	\bibitem{b13}  D. J. Shepherd, “On the Role of Hadamard Gates in Quantum Circuits,”
+	Quantum Information Processing, vol. 5, no. 3, pp. 161–177, May 2006.
 
-	\bibitem{b13} M. M. Qazilbash et al., "Electrodynamics of the vanadium oxides VO\textsubscript{2} and V\textsubscript{2}O\textsubscript{3}," Phys. Rev. B, vol. 77, pp. 115121, 2008.
+	\bibitem{b14} A. Mandviwalla, K. Ohshiro, and B. Ji, “Implementing Grover’s Algorithm on the IBM Quantum Computers.”
 
-	\bibitem{b14} P. Paweł, J. Jamroz, and T. K. Pietrzak, “Observation of metal–insulator transition (mit) in vanadium oxides V\textsubscript{2}O\textsubscript{3} and VO\textsubscript{2} in xrd, dsc and dc experiments,” Crystals, 2023.
-
-	\bibitem{b15} P. Homm, M. Menghini, J. W. Seo, S. Peters, and J. P. Locquet, “Room temperature Mott metal–insulator transition in V\textsubscript{2}O\textsubscript{3} compounds induced via strain-engineering,” APL Materials, vol. 9, no. 2, pp. 021116, Feb  2021.
-
-	\bibitem{b16} F. Mazzola, S. K. Chaluvadi, V. Polewczyk, D. Mondal, J. Fujii, P. Rajak, M. Islam, R. Ciancio, L. Barba, M. Fabrizio, G. Rossi, P. Orgiani, and I. Vobornik, “Disentangling structural and electronic properties in V\textsubscript{2}O\textsubscript{3} thin films: A genuine non symmetry breaking mott transition,” Nano Letters, vol. 22, no. 14, pp. 5990–5996, 2022.
-
-	\bibitem{b17} H. Kizuka et al., “Temperature dependence of thermal conductivity of VO\textsubscript{2} thin films across metal–insulator transition,” Japanese Journal of Applied Physics, vol. 98, no. 053201, 2015.
-
-	\bibitem{b18} H. Y. Peng, L. Pu, J. C. Wu, D. Cha, J. H. Hong, W. N. Lin, Y. Y. Li, J. F. Ding, A. David, K. Li, and T. Wu, “Effects of electrode material and configuration on the characteristics of planar resistive switching devices,” APL Materials, vol. 1, no. 5, pp. 052106, Nov  2013.
+	\bibitem{b15}  D. Reddy Vemula, D. Konar, S. Satheesan, M. Kalidasu, and A. Cangi,
+	“A Scalable 5,6-Qubit Grover’s Quantum Search Algorithm.”.
 \end{thebibliography}
 
 \end{document}

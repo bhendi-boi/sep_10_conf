@@ -220,7 +220,7 @@ Zero phase shift gate in Qiskit are shown in Fig.5,Fig.6and
 Fig.7respectively[12].
 
 \begin{itemize}
-	\item \textbf{Hadamard Gate} The Hadamard gate (often denoted by "H") puts a qubit into an equal superposition of its basis states ($| 0 \rangle $ and $| 1 \rangle $),
+	\item \textbf{Hadamard Gate}: The Hadamard gate (often denoted by "H") puts a qubit into an equal superposition of its basis states ($| 0 \rangle $ and $| 1 \rangle $),
 	      having matrix representation: \\
 	      \begin{center}
 		      $\dfrac{1}{\sqrt{2}}
@@ -228,6 +228,22 @@ Fig.7respectively[12].
 				      1 & 1  \\
 				      1 & -1
 			      \end{bmatrix}$
+	      \end{center}
+	\item \textbf{Pauli-X Gate}: Pauli-X gate (often denoted by "X") or NOT-gate is a $ \pi (180\deg) $ rotation about the x axis, having matrix representation:
+	      \begin{center}
+		      $ \begin{bmatrix}
+				      0 & 1 \\
+				      1 & 0
+			      \end{bmatrix}$
+	      \end{center}
+	\item \textbf{Controlled-Z Gate}: The controlled-Z gate applies a
+	      Pauli-Z gate to the target qubit only if the control qubit is
+	      in the state  $| 1 \rangle $. The target qubit remains unchanged otherwise. Here is the matrix representation of the controlled-z gate:
+	      \begin{center}
+		      $ \begin{bmatrix}
+				      1 & 0  \\
+				      0 & -1
+			      \end{bmatrix} $
 	      \end{center}
 \end{itemize}
 

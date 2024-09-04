@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  12 JUL 2024 10:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  4 SEP 2024 10:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -233,26 +233,8 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count284
 \l__pdf_internal_box=\box55
-) (./grovers_algo.aux
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
-
-LaTeX Warning: Label `fig' multiply defined.
-
 )
+No file grovers_algo.aux.
 \openout1 = `grovers_algo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -269,7 +251,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-
 -- Lines per column: 56 (exact).
 (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -290,19 +271,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 54.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <fig1.png, id=1, 421.575pt x 316.0608pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 134.
+Package pdftex.def Info: fig1.png  used on input line 140.
 (pdftex.def)             Requested size: 256.07967pt x 191.98659pt.
  [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
@@ -311,46 +292,46 @@ Package pdftex.def Info: fig1.png  used on input line 134.
 <fig2.png, id=15, 421.575pt x 316.0608pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 149.
+Package pdftex.def Info: fig2.png  used on input line 155.
 (pdftex.def)             Requested size: 256.07967pt x 191.98659pt.
 <fig3.png, id=16, 632.3625pt x 474.27188pt>
 File: fig3.png Graphic file (type png)
 <use fig3.png>
-Package pdftex.def Info: fig3.png  used on input line 173.
+Package pdftex.def Info: fig3.png  used on input line 179.
 (pdftex.def)             Requested size: 256.07646pt x 192.05734pt.
 <fig4.png, id=17, 444.15938pt x 185.69376pt>
 File: fig4.png Graphic file (type png)
 <use fig4.png>
-Package pdftex.def Info: fig4.png  used on input line 197.
+Package pdftex.def Info: fig4.png  used on input line 203.
 (pdftex.def)             Requested size: 256.07416pt x 107.05925pt.
- [2 <./fig1.png (PNG copy)> <./fig2.png (PNG copy)> <./fig3.png (PNG copy)> <./fig4.png>]
-<3-qubit.png, id=24, 323.2075pt x 154.5775pt>
-File: 3-qubit.png Graphic file (type png)
-<use 3-qubit.png>
-Package pdftex.def Info: 3-qubit.png  used on input line 217.
-(pdftex.def)             Requested size: 256.08568pt x 122.47574pt.
-<4-qubit.png, id=25, 399.4925pt x 216.81pt>
-File: 4-qubit.png Graphic file (type png)
-<use 4-qubit.png>
-Package pdftex.def Info: 4-qubit.png  used on input line 223.
-(pdftex.def)             Requested size: 256.08884pt x 138.98288pt.
-<5-qubit.png, id=26, 474.77374pt x 279.0425pt>
-File: 5-qubit.png Graphic file (type png)
-<use 5-qubit.png>
-Package pdftex.def Info: 5-qubit.png  used on input line 230.
-(pdftex.def)             Requested size: 256.08423pt x 150.51038pt.
+ [2 <./fig1.png (PNG copy)> <./fig2.png (PNG copy)> <./fig3.png (PNG copy)>]
+<3_qubit.png, id=23, 521.53609pt x 372.52577pt>
+File: 3_qubit.png Graphic file (type png)
+<use 3_qubit.png>
+Package pdftex.def Info: 3_qubit.png  used on input line 223.
+(pdftex.def)             Requested size: 256.07217pt x 182.90869pt.
+<4_qubit.png, id=24, 521.53609pt x 372.52577pt>
+File: 4_qubit.png Graphic file (type png)
+<use 4_qubit.png>
+Package pdftex.def Info: 4_qubit.png  used on input line 229.
+(pdftex.def)             Requested size: 256.07217pt x 182.90869pt.
+<5_qubit.png, id=25, 521.53609pt x 372.52577pt>
+File: 5_qubit.png Graphic file (type png)
+<use 5_qubit.png>
+Package pdftex.def Info: 5_qubit.png  used on input line 236.
+(pdftex.def)             Requested size: 256.07217pt x 182.90869pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--244
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
 
  []
 
-[3 <./3-qubit.png (PNG copy)> <./4-qubit.png (PNG copy)> <./5-qubit.png (PNG copy)>]
+[3 <./fig4.png> <./3_qubit.png (PNG copy)> <./4_qubit.png (PNG copy)> <./5_qubit.png (PNG copy)>]
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 328.
+(textcomp)             Default family used instead on input line 334.
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 328.
+(textcomp)             Default family used instead on input line 334.
 
 
 ** Conference Paper **
@@ -363,28 +344,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
-
-] (./grovers_algo.aux)
+[4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./grovers_algo.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4243 strings out of 474222
- 65884 string characters out of 5750210
- 1940978 words of memory out of 5000000
- 26465 multiletter control sequences out of 15000+600000
+ 4240 strings out of 474222
+ 65821 string characters out of 5750210
+ 1941978 words of memory out of 5000000
+ 26464 multiletter control sequences out of 15000+600000
  594326 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,10n,65p,366b,334s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on grovers_algo.pdf (4 pages, 279043 bytes).
+Output written on grovers_algo.pdf (4 pages, 393036 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream

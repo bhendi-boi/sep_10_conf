@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  4 SEP 2024 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  4 SEP 2024 12:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -233,8 +233,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count284
 \l__pdf_internal_box=\box55
-)
-No file grovers_algo.aux.
+) (./grovers_algo.aux)
 \openout1 = `grovers_algo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -251,6 +250,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
+
 -- Lines per column: 56 (exact).
 (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -304,34 +304,49 @@ File: fig4.png Graphic file (type png)
 <use fig4.png>
 Package pdftex.def Info: fig4.png  used on input line 203.
 (pdftex.def)             Requested size: 256.07416pt x 107.05925pt.
+<3-qubit-101.png, id=19, 323.2075pt x 135.50626pt>
+File: 3-qubit-101.png Graphic file (type png)
+<use 3-qubit-101.png>
+Package pdftex.def Info: 3-qubit-101.png  used on input line 224.
+(pdftex.def)             Requested size: 256.08568pt x 107.3651pt.
  [2 <./fig1.png (PNG copy)> <./fig2.png (PNG copy)> <./fig3.png (PNG copy)>]
-<3_qubit.png, id=23, 521.53609pt x 372.52577pt>
-File: 3_qubit.png Graphic file (type png)
-<use 3_qubit.png>
-Package pdftex.def Info: 3_qubit.png  used on input line 223.
-(pdftex.def)             Requested size: 256.07217pt x 182.90869pt.
-<4_qubit.png, id=24, 521.53609pt x 372.52577pt>
-File: 4_qubit.png Graphic file (type png)
-<use 4_qubit.png>
-Package pdftex.def Info: 4_qubit.png  used on input line 229.
-(pdftex.def)             Requested size: 256.07217pt x 182.90869pt.
-<5_qubit.png, id=25, 521.53609pt x 372.52577pt>
-File: 5_qubit.png Graphic file (type png)
-<use 5_qubit.png>
-Package pdftex.def Info: 5_qubit.png  used on input line 236.
-(pdftex.def)             Requested size: 256.07217pt x 182.90869pt.
+<4-qubit-1011.png, id=25, 399.4925pt x 196.735pt>
+File: 4-qubit-1011.png Graphic file (type png)
+<use 4-qubit-1011.png>
+Package pdftex.def Info: 4-qubit-1011.png  used on input line 230.
+(pdftex.def)             Requested size: 256.08884pt x 126.11407pt.
+<5-qubit-11010.png, id=26, 474.77374pt x 258.9675pt>
+File: 5-qubit-11010.png Graphic file (type png)
+<use 5-qubit-11010.png>
+Package pdftex.def Info: 5-qubit-11010.png  used on input line 237.
+(pdftex.def)             Requested size: 256.08423pt x 139.68228pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--250
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
  []
 
-[3 <./fig4.png> <./3_qubit.png (PNG copy)> <./4_qubit.png (PNG copy)> <./5_qubit.png (PNG copy)>]
+<3_qubit.png, id=27, 521.53609pt x 372.52577pt>
+File: 3_qubit.png Graphic file (type png)
+<use 3_qubit.png>
+Package pdftex.def Info: 3_qubit.png  used on input line 292.
+(pdftex.def)             Requested size: 256.07217pt x 182.90869pt.
+<4_qubit.png, id=28, 521.53609pt x 372.52577pt>
+File: 4_qubit.png Graphic file (type png)
+<use 4_qubit.png>
+Package pdftex.def Info: 4_qubit.png  used on input line 298.
+(pdftex.def)             Requested size: 256.07217pt x 182.90869pt.
+<5_qubit.png, id=29, 521.53609pt x 372.52577pt>
+File: 5_qubit.png Graphic file (type png)
+<use 5_qubit.png>
+Package pdftex.def Info: 5_qubit.png  used on input line 305.
+(pdftex.def)             Requested size: 256.07217pt x 182.90869pt.
+[3 <./fig4.png> <./3-qubit-101.png (PNG copy)> <./4-qubit-1011.png (PNG copy)> <./5-qubit-11010.png (PNG copy)>]
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 334.
+(textcomp)             Default family used instead on input line 353.
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 334.
+(textcomp)             Default family used instead on input line 353.
 
 
 ** Conference Paper **
@@ -344,29 +359,25 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./grovers_algo.aux)
+[4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./3_qubit.png (PNG copy)> <./4_qubit.png (PNG copy)> <./5_qubit.png (PNG copy)>] (./grovers_algo.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 4240 strings out of 474222
- 65821 string characters out of 5750210
+ 4275 strings out of 474222
+ 66474 string characters out of 5750210
  1941978 words of memory out of 5000000
- 26464 multiletter control sequences out of 15000+600000
+ 26497 multiletter control sequences out of 15000+600000
  594326 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,10n,65p,366b,334s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on grovers_algo.pdf (4 pages, 393036 bytes).
+Output written on grovers_algo.pdf (4 pages, 420933 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

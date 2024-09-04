@@ -29,7 +29,7 @@
 		Chennai-600127, India. \\
 		ec21b1022@iiitdm.ac.in}
 	\and
- \IEEEauthorblockN{Vikrant Abhishek}
+	\IEEEauthorblockN{Vikrant Abhishek}
 	\IEEEauthorblockA{\textit{Department of ECE,} \\
 		\textit{IIITDM Kancheepuram,}\\
 		Chennai-600127, India. \\
@@ -139,7 +139,7 @@ operations.
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig1.png}}
 	\caption{Superposition of 2 qubits}
-	\label{fig}
+	\label{fig1}
 \end{figure}
 
 \subsection{Oracle Function}
@@ -154,7 +154,7 @@ the correct target.
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig2.png}}
 	\caption{Altering the sign of solution state(10)}
-	\label{fig}
+	\label{fig2}
 \end{figure}
 
 \subsection{Amplitude Amplification}
@@ -178,7 +178,7 @@ the correct state approaches near certainty.
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig3.png}}
 	\caption{Inversion about the mean with amplification.}
-	\label{fig}
+	\label{fig3}
 \end{figure}
 
 \subsection{ Measurement}
@@ -202,40 +202,41 @@ iteration circuit is shown below in Fig. 4.
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{fig4.png}}
 	\caption{Grover Iteration circuit}
-	\label{fig}
+	\label{fig4}
 \end{figure}
 
 \subsection{Oracle}
-An oracle, defined as a medium or agency for divine
-revelation, particularly noted in ancient Greece, also refers
-to a person possessing great wisdom or a wise utterance. In
+In
 quantum computing, a quantum oracle [11] is a computational
 component that furnishes data pertinent to the particular prob
 lem or task undergoing processing by the quantum algorithm.
-The quantum oracle performs a bit-flip on the oracle qubit when the input corresponds to a valid solution.The functionality of the oracle operates on principles rather than mystical
-properties.Through the abstraction of the problem using an
-oracle,we can focus on solving the problem without being
-constrained by its specific details.This quantum algorithm is
-crafted to determine the input value x* for a function F(x),
-where F(x*) = 1 and F(x) = 0 for all other values of x.
+The quantum oracle performs a bit-flip on the oracle qubit when the input corresponds to a valid solution.
+
+$ f(t) = \begin{cases}
+		1, & t = x     \\
+		0, & otherwise
+	\end{cases} $
+\\
+% TODO ! add reference her
+Oracles can be classified into 2 types, phase and boolean. Boolean oracles make use of ancilla qubits while phase oracles contain same number of qubits as the search problem.
 
 \begin{figure}[htbp]
-	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{3_qubit.png}}
+	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{3-qubit-101.png}}
 	\caption{Oracle design for 3-qubit Grover’s algorithm with 101 as solution.}
-	\label{fig}
+	\label{fig5}
 \end{figure}
 
 \begin{figure}[htbp]
-	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{4_qubit.png}}
+	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{4-qubit-1011.png}}
 	\caption{Oracle design for 4-qubit Grover’s algorithm with 1011 as solution.}
-	\label{fig}
+	\label{fig6}
 \end{figure}
 
 
 \begin{figure}[htbp]
-	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{5_qubit.png}}
+	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{5-qubit-11010.png}}
 	\caption{Oracle design for 5-qubit Grover’s algorithm with 11010 as solution.}
-	\label{fig}
+	\label{fig7}
 \end{figure}
 
 \subsection{Diffusion operator}
@@ -287,6 +288,24 @@ observed 987 times (Fig. 12), corresponding to a probability
 of 96.38 percent. In 1,024 measurements with the ibmqx4,
 the outcome x = (11010) was observed 1023 times (Fig. 13),
 corresponding to a probability of 99.90 percent
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{3_qubit.png}}
+	\caption{Results for 101 detection}
+	\label{fig8}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{4_qubit.png}}
+	\caption{Results for 1011 detection}
+	\label{fig9}
+\end{figure}
+
+
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{5_qubit.png}}
+	\caption{Results for 11010 detection}
+	\label{fig10}
+\end{figure}
 
 \section{CONCLUSION}
 In summary, quantum computing presents an intriguing

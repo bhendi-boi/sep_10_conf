@@ -8,6 +8,7 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{chemmacros}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \renewcommand\IEEEkeywordsname{Keywords}
@@ -91,32 +92,16 @@
 \end{IEEEkeywords}
 
 \section{Introduction}
-The exploration of quantum computing [1][2] falls within
-the realm of quantum information science, which revolves
-around the fundamental principles of storing and manipulating
-information. In this work, we delved into quantum computing,
-acquiring a comprehensive understanding of quantum bits
-and their properties, as well as leveraging these properties
-to tackle problems. We familiarized ourselves with quantum
-gates and their operations on qubits, simulating all the fundamental quantum gates [3][4]. Additionally, we delved into the
-Grover search algorithm and implemented quantum gates for
-Grover operations. Quantum computers exhibit significantly
-faster speeds compared to classical computers [5][6]. In the
-case of an unsorted dataset with size N, classical computers
-usually demand O(N) operations, whereas Grover’s algorithm
-accomplishes this task optimally in O($\sqrt{N}$) operations.
+% Discuss quantum computing and grover's algorithm.
+Quantum computing is a new frontier in computer science that utilizes the unique phenomena of quantum physics to solve problems that are too complex for classical computers to handle.\cite{b0}. Quantum computing algorithms are specialized procedures designed to harness the unique capabilities of quantum computers to solve problems more efficiently than classical algorithms. These algorithms leverage quantum phenomena like superposition and entanglement to explore multiple possibilities simultaneously, leading to potential speedups for certain types of tasks. One such algorithm is Grover's algorithm\cite{b1}. With Grover's algorithm searching an unsorted database is quadratically faster than classical algorithms.
 \\
-We
-executed the algorithm using Qiskit, an IBM tool for computing quantum circuits, and conducted simulations for the
-Grover algorithm [7], presenting the results graphically with
-the probability of obtaining the correct output.
+% Discuss what has been done till now.
+Grover's algorithm has been implemented on publicly available quantum computers like IBM Q 5 Tenerife (5-qubit chip) and IBM Q 16 Rüschlikon (16-qubit chip) \cite{b2} and on programmable quantum computer consisting of a
+linear chain of five trapped ions \cite{b3} . While the early implementations were on small-scale devices with limited qubits, significant progress has been made in recent years.
 
-Within Grover’s quantum search algorithm, a network with
-n qubits harbors $ 2^{n} $ = N states, with each state bearing a
-probability of $ 1/N $ for discovery. Consequently, the amplitude
-of each state is $ 1/\sqrt{N} $
-. Conversely, classical systems tackling the
-same problem necessitate a maximum of O(N) trials.
+% Discuss what we will be doing.
+Our goal is to investigate the readiness of current IBM quantum computers to support the execution of Grover's algorithm.
+
 \section{Background and Methodology}
 
 The Grover search algorithm, conceived by Lov Grover
@@ -301,15 +286,23 @@ be extended to n-qubits.
 
 
 \begin{thebibliography}{00}
+	% TODO ? How to add a link as a reference
+	\bibitem{b0} What is quantum computing?  https://www.ibm.com/topics/quantum-computing
 
-	\bibitem{b1}  C. P. Williams, “Introduction,” Texts in Computer Science, pp. 3–49,
+	\bibitem{b1}  L. K. Grover, “A fast quantum mechanical algorithm for database search,” arXiv:quant-ph/9605043, Nov. 1996.
+
+	\bibitem{b2} A. Mandviwalla, K. Ohshiro, and B. Ji, “Implementing Grover’s Algorithm on the IBM Quantum Computers.”
+
+	\bibitem{b3} Figgatt, C., Maslov, D., Landsman, K.A. et al. Complete 3-Qubit Grover search on a programmable quantum computer. Nat Commun 8, 1918 (2017). https://doi.org/10.1038/s41467-017-01904-7
+
+	\bibitem{b8}  C. P. Williams, “Introduction,” Texts in Computer Science, pp. 3–49,
 	2011.
 
-	\bibitem{b2}  T. D. Ladd, F. Jelezko, R. Laflamme, Y. Nakamura, C. Monroe, and
+	\bibitem{b14}  T. D. Ladd, F. Jelezko, R. Laflamme, Y. Nakamura, C. Monroe, and
 	J. L. O’Brien, “Quantum computers,” Nature, vol. 464, no. 7285, pp.
 	45–53, Mar. 2010.
 
-	\bibitem{b3} “Quantum Computing: Fundamentals, Implementations and Applications” — IEEE Journals Magazine — IEEE Xplore, ieeexplore.ieee.org.
+	\bibitem{b20} “Quantum Computing: Fundamentals, Implementations and Applications” — IEEE Journals Magazine — IEEE Xplore, ieeexplore.ieee.org.
 
 	\bibitem{b4} D. P. DiVincenzo, “The Physical Implementation of Quantum Computation,” Fortschritte der Physik, vol. 48, no. 9–11, pp. 771–783, Sep.
 	2000.
@@ -322,7 +315,7 @@ be extended to n-qubits.
 
 	\bibitem{b7} “Learn Quantum Computing with Python and IBM Quantum Experience: A hands-on introduction to quantum computing and writing your own quantum programs with Python- Robert Loredo- Libro in linguainglese- Packt Publishing Limited- — IBS,” www.ibs.it.
 
-	\bibitem{b8}  L. K. Grover, “A fast quantum mechanical algorithm for database search,” arXiv:quant-ph/9605043, Nov. 1996.
+
 
 	\bibitem{b9} A. J. et al., “Quantum Algorithm Implementations for Beginners,” arXiv:1804.03719 [quant-ph], Mar. 2020.
 
@@ -338,7 +331,7 @@ be extended to n-qubits.
 	\bibitem{b13}  D. J. Shepherd, “On the Role of Hadamard Gates in Quantum Circuits,”
 	Quantum Information Processing, vol. 5, no. 3, pp. 161–177, May 2006.
 
-	\bibitem{b14} A. Mandviwalla, K. Ohshiro, and B. Ji, “Implementing Grover’s Algorithm on the IBM Quantum Computers.”
+
 
 	\bibitem{b15}  D. Reddy Vemula, D. Konar, S. Satheesan, M. Kalidasu, and A. Cangi,
 	“A Scalable 5,6-Qubit Grover’s Quantum Search Algorithm.”.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  6 SEP 2024 09:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  6 SEP 2024 09:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -465,10 +465,10 @@ Package pdftex.def Info: ibm_kyiv_phase_oracles.png  used on input line 287.
  [3 <./fig4.png> <./3-qubit-101.png (PNG copy)> <./4-qubit-1011.png (PNG copy)> <./5-qubit-11010.png (PNG copy)> <./3-qubit-diff.png (PNG copy)>]
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 320.
+(textcomp)             Default family used instead on input line 319.
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 320.
+(textcomp)             Default family used instead on input line 319.
  [4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./3_qubit.png (PNG copy)> <./4_qubit.png (PNG copy)> <./5_qubit.png (PNG copy)> <./ibm_kyiv_phase_oracles.png>]
 
 ** Conference Paper **
@@ -500,7 +500,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,10n,79p,664b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on grovers_algo.pdf (5 pages, 457219 bytes).
+Output written on grovers_algo.pdf (5 pages, 457188 bytes).
 PDF statistics:
  212 PDF objects out of 1000 (max. 8388607)
  165 compressed objects within 2 object streams

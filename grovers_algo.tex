@@ -280,7 +280,7 @@ search algorithm are shown in Fig \ref{fig:3_qubit}, Fig \ref{fig:4_qubit} and F
 
 \subsection{Experimental Results}
 For every possible value of x (with 3 classical bits), a 3-qubit Grover circuit is constructed with phase oracle and the diffusion operator discussed above. The circuits are then transpiled and ran on ibm\_kyiv quantum computer.
-The circuits are ran for 1024 times and the success probabilities are plotted against the value of x we are searching in Fig \ref{fig:ibm_kyiv_results}.
+The circuits are ran for 1024 times and the success probabilities are plotted against the value of x we are searching in Fig \ref{fig:ibm_kyiv_results}. In all the cases we observe that the success probability is more that 0.5.
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{ibm_kyiv_phase_oracles.png}}
 	\caption{Results obtained when 3-qubit Grover's algorithm is implemented using phase oracles on ibm\_kyiv}

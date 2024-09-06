@@ -212,7 +212,9 @@ In
 quantum computing, a quantum oracle [11] is a computational
 component that furnishes data pertinent to the particular prob
 lem or task undergoing processing by the quantum algorithm.
-The quantum oracle performs a bit-flip on the oracle qubit when the input corresponds to a valid solution. Oracle can be understood as a function $ f(t) $ as described below.
+The quantum oracle performs a bit-flip on the oracle qubit when the input corresponds to a valid solution. Oracle can be understood as described below.
+
+$ Oracle(x) = (-1)^{f(x)} |x \rangle $
 
 $ f(t) = \begin{cases}
 		1, & t = x     \\
@@ -220,24 +222,24 @@ $ f(t) = \begin{cases}
 	\end{cases} $
 \\
 % TODO ! add reference her
-Oracles can be classified into 2 types, phase and boolean. Boolean oracles make use of ancilla qubits while phase oracles contain same number of qubits as the search problem. We have used boolean oracles to implement Grover's algorithm.
+Oracles can be classified into 2 types, phase and boolean. Boolean oracles make use of ancilla qubits while phase oracles contain same number of qubits as the search problem. We have used boolean oracles depicted in Fig \ref{fig:3-qubit}, Fig \ref{fig:4-qubit} and Fig \ref{fig:5-qubit} to implement Grover's search algorithm.
 
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{3-qubit-101.png}}
 	\caption{Oracle design for 3-qubit Grover’s algorithm with 101 as solution.}
-	\label{fig5}
+	\label{fig:3-qubit}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{4-qubit-1011.png}}
-	\caption{Oracle design for 4-qubit Grover’s algorithm with 1011 as solution.}
-	\label{fig6}
+	\caption{Oracle design for 4-qubit Grover's algorithm with 1011 as solution.}
+	\label{fig:4-qubit}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{5-qubit-11010.png}}
-	\caption{Oracle design for 5-qubit Grover’s algorithm with 11010 as solution.}
-	\label{fig7}
+	\caption{Oracle design for 5-qubit Grover's algorithm with 11010 as solution.}
+	\label{fig:5-qubit}
 \end{figure}
 
 \subsection{Diffusion operator}

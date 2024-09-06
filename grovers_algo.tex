@@ -290,27 +290,11 @@ The success probability is greater than 0.5 for all the cases.
 
 \section{CONCLUSION}
 In summary, quantum computing presents an intriguing
-pathway for addressing intricate problems that surpass the capabilities of classical computers. Qiskit’s quantum computing
-platform offers a sturdy framework for creating, simulating,
-and executing quantum algorithms. In contrast to classical
+pathway for addressing intricate problems that surpass the capabilities of classical computers. In contrast to classical
 search algorithms, which require O(N) operations for N
-items, Grover’s algorithm achieves this task in approximately
-O($\sqrt{N} $) operations. Initially, we replicated IBM’s proposed
-Grover search algorithm for 3 qubits. To enhance fidelity, we
-modified the design of the Oracle and Diffusion operators by
-incorporating auxiliary qubits. However, this led to increased
-circuit complexity due to a larger number of gates. The
-experiments were conducted using the IBM Q-simulator. The
-results indicate that the scalable Grover’s search technique
-proposed can potentially be employed in future quantum
-systems for a wide range of large-scale applications. Since
-the diffusion process incorporates the Oracle (HX + Oracle +
-XH), iteratively running the Oracle circuit multiple times complicates the quantum circuit and decreases its effectiveness.
-Nonetheless, by designing the Oracle as a subroutine, we can
-leverage the advantages of reusability. This strategy mitigates
-potential manual mistakes and streamlines the process by
-eliminating the necessity of re-executing all the gates, with
-IBM Q providing assistance for subroutines. Subsequently,
+items, Grover's algorithm achieves this task in approximately
+O($\sqrt{N} $) operations. Experimental results for Grover's algorithm on 3-qubit cases consistently yielded success probabilities exceeding 0.5, indicating the algorithm's effectiveness in practical applications.
+Subsequently,
 using this 5-qubit setup as a benchmark, the algorithm will
 be extended to n-qubits.
 

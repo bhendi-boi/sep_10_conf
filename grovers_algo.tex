@@ -228,9 +228,8 @@ Oracles can be classified into 2 types, phase and boolean. Boolean oracles make 
 \end{figure}
 
 \subsection{Diffusion operator}
-The diffusion operation can be realized through the sequence: \textbf{HX+$\textbf{C}^{\textbf{n-1}}\textbf{Z}$+XH}. In this scenario, H symbolizes
-the Hadamard transform,while X represents the Pauli-X gate.
-This sequence effectively flips the amplitudes around their
+The diffusion operation can be realised through the sequence: \textbf{HX+$\textbf{C}^{\textbf{n-1}}\textbf{Z}$+XH}. In this scenario, H symbolises
+the Hadamard gate, X represents the Pauli-X gate and $C^{n-1}Z$ is a controlled Z gate with n-1 control qubits. This sequence effectively flips the amplitudes around their
 mean value.
 
 \begin{figure}[htbp]
@@ -266,8 +265,8 @@ search algorithm are shown in Fig \ref{fig:3_qubit}, Fig \ref{fig:4_qubit} and F
 \end{figure}
 
 \subsection{Experimental Results}
-For every possible value of x (with 3 classical bits), a 3-qubit Grover circuit is constructed with phase oracle and the diffusion operator discussed above. The circuits are then transpiled and ran on ibm\_kyiv quantum computer.
-The circuits are ran for 1024 times and the success probabilities are plotted against the value of x we are searching in Fig \ref{fig:ibm_kyiv_results}. In all the cases we observe that the success probability is more that 0.5.
+For every possible value of x (with 3 classical bits), a 3-qubit Grover circuit is constructed with phase oracle and the diffusion operator discussed above. The circuits are then transpiled and run on ibm\_kyiv quantum computer.
+The circuits are run for 1024 times and the success probabilities are plotted against the value of x we are searching in Fig \ref{fig:ibm_kyiv_results}. In all the cases we observe that the success probability is more than 0.5.
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{ibm_kyiv_phase_oracles.png}}
 	\caption{Results obtained when 3-qubit Grover's algorithm is implemented using phase oracles on ibm\_kyiv}

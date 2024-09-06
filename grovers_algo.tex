@@ -238,12 +238,12 @@ mean value.
 	\label{3diff}
 \end{figure}
 
-\section{Results}
-3-qubit, 4-qubit and 5-qubit Grover circuits are simulated using AerSimulator from Qiskit. In addition to that 3-qubit Grover's algorithm is implemented using phase oracles on ibm\_kyiv quantum computer.
-% TODO ! ADD reference
+\section{Results and Discussion}
+3-qubit, 4-qubit and 5-qubit Grover circuits are simulated using AerSimulator from Qiskit. In addition to that 3-qubit Grover's algorithm is implemented using phase oracles \cite{b3} on ibm\_kyiv quantum computer.
+
 \subsection{Simulation Results}
 Simulation results for 3-qubit, 4-qubit and 5-qubit Grover
-search algorithm are shown in Fig \ref{fig:3_qubit}, Fig \ref{fig:4_qubit} and Fig \ref{fig:5_qubit} respectively. For 3-qubit case when searching for x=101, the algorithm yielded a success probability of 0.944. Similarly for 4 and 5 qubit cases the algorithm yielded a success probability of 0.965 and 0.999 when searching for x=1011 and x=01011. In Qiskit qubits are indexed in reverse order compared to the standard physical convention. That is why for 4-qubit and 5-qubit cases the algorithm finds \textbf{1101} and \textbf{01011} with high probability.
+search algorithm are shown in Fig \ref{fig:3_qubit}, Fig \ref{fig:4_qubit} and Fig \ref{fig:5_qubit} respectively. For the 3-qubit case when searching for x=010, the algorithm yielded a success probability of 0.933. Similarly for 4 and 5 qubit cases the algorithm yielded a success probability of 0.959 and 0.999 when searching for x=0101 and x=01011 respectively. These results closely match with the simulations results with \textbf{HX + ORACLE + XH} as the oracle \cite{b15}. By replacing the oracle with a $C^{n-1}$Z we can reduce the number of gates required to implement the Grover's search algorithm.
 
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{3_qubit.png}}

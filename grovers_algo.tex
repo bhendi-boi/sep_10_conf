@@ -253,8 +253,8 @@ mean value.
 \end{figure}
 
 \section{Results}
-3-qubit, 4-qubit and 5-qubit Grover circuits are simulated using AerSimulator from Qiskit.
-
+3-qubit, 4-qubit and 5-qubit Grover circuits are simulated using AerSimulator from Qiskit. In addition to that 3-qubit Grover's algorithm is implemented using phase oracles on ibm\_kyiv quantum computer.
+% TODO ! ADD reference
 \subsection{Simulation Results}
 Simulation results for 3-qubit, 4-qubit and 5-qubit Grover
 search algorithm are shown in Fig \ref{fig:3_qubit}, Fig \ref{fig:4_qubit} and Fig \ref{fig:5_qubit} respectively. For 3-qubit case when searching for x=101, the algorithm yielded a success probability of 0.944. Similarly for 4 and 5 qubit cases the algorithm yielded a success probability of 0.965 and 0.999 when searching for x=1011 and x=01011. In Qiskit qubits are indexed in reverse order compared to the standard physical convention. That is why for 4-qubit and 5-qubit cases the algorithm finds \textbf{1101} and \textbf{01011} with high probability.
@@ -278,6 +278,15 @@ search algorithm are shown in Fig \ref{fig:3_qubit}, Fig \ref{fig:4_qubit} and F
 	\label{fig:5_qubit}
 \end{figure}
 
+\subsection{Experimental Results}
+For every possible value of x (with 3 classical bits), a 3-qubit Grover circuit is constructed with phase oracle and the diffusion operator discussed above. The circuits are then transpiled and ran on ibm\_kyiv quantum computer.
+The circuits are ran for 1024 times and the success probabilities are plotted against the value of x we are searching in Fig \ref{fig:ibm_kyiv_results}.
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{ibm_kyiv_phase_oracles.png}}
+	\caption{Results obtained when 3-qubit Grover's algorithm is implemented using phase oracles on ibm\_kyiv}
+	\label{fig:ibm_kyiv_results}
+\end{figure}
+The success probability is greater than 0.5 for all the cases.
 
 \section{CONCLUSION}
 In summary, quantum computing presents an intriguing

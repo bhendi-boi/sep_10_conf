@@ -254,8 +254,8 @@ search algorithm are shown in Fig \ref{fig:3_qubit}, Fig \ref{fig:4_qubit} and F
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{4_qubit.png}}
 	\caption{Results obtained when 4-qubit Grover circuit built using oracle
-	oracle from Fig \ref{fig:4-qubit}
-	is simulated using AerSimulator}
+		oracle from Fig \ref{fig:4-qubit}
+		is simulated using AerSimulator}
 	\label{fig:4_qubit}
 \end{figure}
 
@@ -268,7 +268,9 @@ search algorithm are shown in Fig \ref{fig:3_qubit}, Fig \ref{fig:4_qubit} and F
 
 \subsection{Experimental Results}
 For every possible value of x (with 3 classical bits), a 3-qubit Grover circuit is constructed with phase oracle and the diffusion operator discussed above. The circuits are then transpiled and run on ibm\_kyiv quantum computer.
-The circuits are run for 1024 times and the success probabilities are plotted against the value of x we are searching in Fig \ref{fig:ibm_kyiv_results}. In all the cases we observe that the success probability is more than 0.5.
+The circuits are run for 1024 times and the success probabilities are plotted against the value of x we are searching in Fig \ref{fig:ibm_kyiv_results}. In all the cases we observe that the success probability is more than 0.5. We see an average of 0.12625 increase in the success probability with the results mentioned in \cite{b3}.
+
+When we compare the results from ibm\_kyiv to that of IBM Q 5 Tenerife \cite{b2} while running the 3-qubit Grover's algorithm,  we see a dramatic decrease in the execution time. For 8192 shots the IBM Q 5 Tenerife took 84.33s whereas ibm\_kyiv took 5s. We also see an increase in success probability from 0.5969 in IBM Q 5 Tenerife to 0.707 in ibm\_kyiv.
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=9cm,height=10cm,keepaspectratio]{ibm_kyiv_phase_oracles.png}}
 	\caption{Results obtained when 3-qubit Grover's algorithm is implemented using phase oracles on ibm\_kyiv}
@@ -336,6 +338,9 @@ be extended to n-qubits.
 
 	\bibitem{b15}  D. Reddy Vemula, D. Konar, S. Satheesan, M. Kalidasu, and A. Cangi,
 	“A Scalable 5,6-Qubit Grover’s Quantum Search Algorithm.”.
+
+	\bibitem{b21} Quantum computing Fundamentals - Dr. Chuck Eastomm
+
 \end{thebibliography}
 
 \end{document}
